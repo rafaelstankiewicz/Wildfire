@@ -1,0 +1,263 @@
+﻿2_Layer_CNN_64
+----------------------------------------------------------------
+Input size (MB): 0.05
+Forward/backward pass size (MB): 0.91
+Params size (MB): 4.69
+Estimated Total Size (MB): 5.65
+----------------------------------------------------------------
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1            [-1, 8, 64, 64]             104
+              ReLU-2            [-1, 8, 64, 64]               0
+         MaxPool2d-3            [-1, 8, 32, 32]               0
+            Conv2d-4           [-1, 16, 32, 32]             528
+              ReLU-5           [-1, 16, 32, 32]               0
+         MaxPool2d-6           [-1, 16, 16, 16]               0
+           Dropout-7           [-1, 16, 16, 16]               0
+           Flatten-8                 [-1, 4096]               0
+            Linear-9                  [-1, 300]       1,229,100
+             ReLU-10                  [-1, 300]               0
+          Dropout-11                  [-1, 300]               0
+           Linear-12                    [-1, 2]             602
+================================================================
+Total params: 1,230,334
+Trainable params: 1,230,334
+Non-trainable params: 0
+----------------------------------------------------------------
+
+
+[ 1/10] Train Loss = 0.2823; Valid Loss = 0.1994; Valid Accuracy = 92.9%
+[ 2/10] Train Loss = 0.2113; Valid Loss = 0.1781; Valid Accuracy = 93.3%
+[ 3/10] Train Loss = 0.1934; Valid Loss = 0.1867; Valid Accuracy = 92.5%
+[ 4/10] Train Loss = 0.1846; Valid Loss = 0.1482; Valid Accuracy = 94.0%
+[ 5/10] Train Loss = 0.1737; Valid Loss = 0.1905; Valid Accuracy = 92.6%
+[ 6/10] Train Loss = 0.1663; Valid Loss = 0.1491; Valid Accuracy = 94.6%
+[ 7/10] Train Loss = 0.1634; Valid Loss = 0.1473; Valid Accuracy = 94.7%
+[ 8/10] Train Loss = 0.1581; Valid Loss = 0.1349; Valid Accuracy = 94.9%
+[ 9/10] Train Loss = 0.1540; Valid Loss = 0.1346; Valid Accuracy = 94.8%
+[10/10] Train Loss = 0.1519; Valid Loss = 0.1292; Valid Accuracy = 94.9%
+
+
+[10/10] Train Loss = 0.1519; Valid Loss = 0.1292; Valid Accuracy = 94.9%
+________________
+2_Layer_CNN_128_Base
+
+
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1          [-1, 8, 128, 128]             104
+              ReLU-2          [-1, 8, 128, 128]               0
+         MaxPool2d-3            [-1, 8, 64, 64]               0
+            Conv2d-4           [-1, 16, 64, 64]             528
+              ReLU-5           [-1, 16, 64, 64]               0
+         MaxPool2d-6           [-1, 16, 32, 32]               0
+           Dropout-7           [-1, 16, 32, 32]               0
+           Flatten-8                [-1, 16384]               0
+            Linear-9                  [-1, 300]       4,915,500
+             ReLU-10                  [-1, 300]               0
+          Dropout-11                  [-1, 300]               0
+           Linear-12                    [-1, 2]             602
+================================================================
+Total params: 4,916,734
+Trainable params: 4,916,734
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.19
+Forward/backward pass size (MB): 3.63
+Params size (MB): 18.76
+Estimated Total Size (MB): 22.58
+----------------------------------------------------------------
+
+
+[ 1/10] Train Loss = 0.3262; Valid Loss = 0.1890; Valid Accuracy = 92.9%
+[ 2/10] Train Loss = 0.2062; Valid Loss = 0.1725; Valid Accuracy = 93.5%
+[ 3/10] Train Loss = 0.1927; Valid Loss = 0.1609; Valid Accuracy = 94.0%
+[ 4/10] Train Loss = 0.1819; Valid Loss = 0.1684; Valid Accuracy = 93.6%
+[ 5/10] Train Loss = 0.1691; Valid Loss = 0.1384; Valid Accuracy = 94.8%
+[ 6/10] Train Loss = 0.1605; Valid Loss = 0.1462; Valid Accuracy = 94.4%
+[ 7/10] Train Loss = 0.1548; Valid Loss = 0.1284; Valid Accuracy = 95.3%
+[ 8/10] Train Loss = 0.1488; Valid Loss = 0.1626; Valid Accuracy = 93.7%
+[ 9/10] Train Loss = 0.1494; Valid Loss = 0.1729; Valid Accuracy = 93.9%
+[10/10] Train Loss = 0.1419; Valid Loss = 0.1127; Valid Accuracy = 95.9%
+
+
+[10/10] Train Loss = 0.1419; Valid Loss = 0.1127; Valid Accuracy = 95.9%
+________________
+2_Layer_CNN_128_Aug
+
+
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1          [-1, 8, 128, 128]             104
+              ReLU-2          [-1, 8, 128, 128]               0
+         MaxPool2d-3            [-1, 8, 64, 64]               0
+            Conv2d-4           [-1, 16, 64, 64]             528
+              ReLU-5           [-1, 16, 64, 64]               0
+         MaxPool2d-6           [-1, 16, 32, 32]               0
+           Dropout-7           [-1, 16, 32, 32]               0
+           Flatten-8                [-1, 16384]               0
+            Linear-9                  [-1, 300]       4,915,500
+             ReLU-10                  [-1, 300]               0
+          Dropout-11                  [-1, 300]               0
+           Linear-12                    [-1, 2]             602
+================================================================
+Total params: 4,916,734
+Trainable params: 4,916,734
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.19
+Forward/backward pass size (MB): 3.63
+Params size (MB): 18.76
+Estimated Total Size (MB): 22.58
+----------------------------------------------------------------
+
+
+[ 1/10] Train Loss = 0.2830; Valid Loss = 0.2217; Valid Accuracy = 92.0%
+[ 2/10] Train Loss = 0.2205; Valid Loss = 0.1799; Valid Accuracy = 93.0%
+[ 3/10] Train Loss = 0.2003; Valid Loss = 0.1725; Valid Accuracy = 93.6%
+[ 4/10] Train Loss = 0.1917; Valid Loss = 0.1532; Valid Accuracy = 94.2%
+[ 5/10] Train Loss = 0.1774; Valid Loss = 0.1486; Valid Accuracy = 94.4%
+[ 6/10] Train Loss = 0.1680; Valid Loss = 0.1387; Valid Accuracy = 94.9%
+[ 7/10] Train Loss = 0.1580; Valid Loss = 0.1562; Valid Accuracy = 94.1%
+[ 8/10] Train Loss = 0.1541; Valid Loss = 0.1295; Valid Accuracy = 95.2%
+[ 9/10] Train Loss = 0.1457; Valid Loss = 0.1716; Valid Accuracy = 93.7%
+[10/10] Train Loss = 0.1440; Valid Loss = 0.1251; Valid Accuracy = 95.3%
+
+
+[10/10] Train Loss = 0.1440; Valid Loss = 0.1251; Valid Accuracy = 95.3%
+
+
+Test Loss = 0.1104
+Test Accuracy = 96.3%
+
+
+
+
+
+
+________________
+
+
+3_Layer_CNN_128
+
+
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1          [-1, 8, 128, 128]             104
+              ReLU-2          [-1, 8, 128, 128]               0
+         MaxPool2d-3            [-1, 8, 64, 64]               0
+            Conv2d-4           [-1, 16, 64, 64]             528
+              ReLU-5           [-1, 16, 64, 64]               0
+         MaxPool2d-6           [-1, 16, 32, 32]               0
+            Conv2d-7           [-1, 32, 32, 32]           2,080
+              ReLU-8           [-1, 32, 32, 32]               0
+         MaxPool2d-9           [-1, 32, 32, 32]               0
+          Dropout-10           [-1, 32, 32, 32]               0
+          Flatten-11                [-1, 32768]               0
+           Linear-12                 [-1, 1000]      32,769,000
+             ReLU-13                 [-1, 1000]               0
+          Dropout-14                 [-1, 1000]               0
+           Linear-15                    [-1, 2]           2,002
+================================================================
+Total params: 32,773,714
+Trainable params: 32,773,714
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.19
+Forward/backward pass size (MB): 4.65
+Params size (MB): 125.02
+Estimated Total Size (MB): 129.86
+----------------------------------------------------------------
+
+
+[ 1/10] Train Loss = 0.2682; Valid Loss = 0.1950; Valid Accuracy = 93.2%
+[ 2/10] Train Loss = 0.1927; Valid Loss = 0.1542; Valid Accuracy = 94.1%
+[ 3/10] Train Loss = 0.1696; Valid Loss = 0.1531; Valid Accuracy = 94.3%
+[ 4/10] Train Loss = 0.1532; Valid Loss = 0.1233; Valid Accuracy = 95.4%
+[ 5/10] Train Loss = 0.1392; Valid Loss = 0.1130; Valid Accuracy = 95.8%
+[ 6/10] Train Loss = 0.1310; Valid Loss = 0.1141; Valid Accuracy = 95.7%
+[ 7/10] Train Loss = 0.1215; Valid Loss = 0.1204; Valid Accuracy = 95.4%
+[ 8/10] Train Loss = 0.1169; Valid Loss = 0.1250; Valid Accuracy = 95.7%
+[ 9/10] Train Loss = 0.1136; Valid Loss = 0.1094; Valid Accuracy = 96.0%
+[10/10] Train Loss = 0.1066; Valid Loss = 0.1152; Valid Accuracy = 95.9%
+
+
+[10/10] Train Loss = 0.1066; Valid Loss = 0.1152; Valid Accuracy = 95.9%
+
+
+________________
+
+
+3_Block_CNN_128
+
+
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1         [-1, 32, 128, 128]             896
+              ReLU-2         [-1, 32, 128, 128]               0
+            Conv2d-3         [-1, 64, 128, 128]          18,496
+              ReLU-4         [-1, 64, 128, 128]               0
+         MaxPool2d-5           [-1, 64, 64, 64]               0
+            Conv2d-6          [-1, 128, 64, 64]          73,856
+              ReLU-7          [-1, 128, 64, 64]               0
+            Conv2d-8          [-1, 128, 64, 64]         147,584
+              ReLU-9          [-1, 128, 64, 64]               0
+        MaxPool2d-10          [-1, 128, 32, 32]               0
+           Conv2d-11          [-1, 256, 32, 32]         295,168
+             ReLU-12          [-1, 256, 32, 32]               0
+           Conv2d-13          [-1, 256, 32, 32]         590,080
+             ReLU-14          [-1, 256, 32, 32]               0
+        MaxPool2d-15          [-1, 256, 16, 16]               0
+          Dropout-16          [-1, 256, 16, 16]               0
+          Flatten-17                [-1, 65536]               0
+           Linear-18                 [-1, 1000]      65,537,000
+             ReLU-19                 [-1, 1000]               0
+           Linear-20                  [-1, 100]         100,100
+             ReLU-21                  [-1, 100]               0
+          Dropout-22                  [-1, 100]               0
+           Linear-23                    [-1, 2]             202
+================================================================
+Total params: 66,763,382
+Trainable params: 66,763,382
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.19
+Forward/backward pass size (MB): 52.52
+Params size (MB): 254.68
+Estimated Total Size (MB): 307.39
+----------------------------------------------------------------
+
+
+[ 1/10] Train Loss = 0.3050; Valid Loss = 0.2850; Valid Accuracy = 89.3%
+[ 2/10] Train Loss = 0.2012; Valid Loss = 0.1520; Valid Accuracy = 94.4%
+[ 3/10] Train Loss = 0.1675; Valid Loss = 0.1278; Valid Accuracy = 95.3%
+[ 4/10] Train Loss = 0.1473; Valid Loss = 0.1168; Valid Accuracy = 96.1%
+[ 5/10] Train Loss = 0.1466; Valid Loss = 0.1061; Valid Accuracy = 96.3%
+[ 6/10] Train Loss = 0.1259; Valid Loss = 0.0954; Valid Accuracy = 96.6%
+[ 7/10] Train Loss = 0.1206; Valid Loss = 0.1031; Valid Accuracy = 96.2%
+[ 8/10] Train Loss = 0.1263; Valid Loss = 0.0938; Valid Accuracy = 96.7%
+[ 9/10] Train Loss = 0.1080; Valid Loss = 0.0950; Valid Accuracy = 96.6%
+[10/10] Train Loss = 0.1003; Valid Loss = 0.1427; Valid Accuracy = 95.0%
+________________
+Vision Transformer
+
+
+[ 1/10] Train Loss = 0.46; Valid Loss = 0.40; Valid Accuracy = 90.44%
+[ 2/10] Train Loss = 0.42; Valid Loss = 0.40; Valid Accuracy = 90.38%
+[ 3/10] Train Loss = 0.41; Valid Loss = 0.39; Valid Accuracy = 91.87%
+[ 4/10] Train Loss = 0.40; Valid Loss = 0.38; Valid Accuracy = 92.76%
+[ 5/10] Train Loss = 0.40; Valid Loss = 0.38; Valid Accuracy = 93.25%
+[ 6/10] Train Loss = 0.39; Valid Loss = 0.37; Valid Accuracy = 93.79
+[ 7/10] Train Loss = 0.39; Valid Loss = 0.42; Valid Accuracy = 88.98%
+[ 8/10] Train Loss = 0.39; Valid Loss = 0.38; Valid Accuracy = 93.00%
+[ 9/10] Train Loss = 0.39; Valid Loss = 0.39; Valid Accuracy = 91.87%
+[10/10] Train Loss = 0.38; Valid Loss = 0.37; Valid Accuracy = 94.49%
+
+
+Test Loss = 0.3748
+Test Accuracy = 93.5%
